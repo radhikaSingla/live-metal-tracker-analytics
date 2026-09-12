@@ -4,18 +4,6 @@ A real-time Streamlit dashboard tracking Gold, Silver, Platinum, Palladium,
 and Copper futures, with session analytics, technical indicators, and
 price alerts.
 
-## What's new vs. the original app
-
-| Area | Before | Now |
-|---|---|---|
-| Refresh mechanism | Blocking `while True` loop — froze the UI, widgets never worked, couldn't be deployed reliably | `st.fragment(run_every=...)` — auto-refreshes just the data panel, sidebar stays interactive |
-| Metals tracked | Gold & Silver only | Gold, Silver, Platinum, Palladium, Copper (user-selectable) |
-| API calls | Uncached, hit Yahoo Finance every loop tick | Cached with `st.cache_data` (30s live price / 1h yearly range / 10m RSI) |
-| Analytics | Price + simple moving average | Normalized % comparison chart, 14-period RSI, 52-week range, correlation heatmap |
-| Alerts | None | Configurable per-metal target price with toast notifications |
-| Data export | None | One-click CSV download of the session's price history |
-| Visual identity | Generic dark gradient | Custom "obsidian terminal" theme with monospace type and metal-specific accent colors |
-| Deployability | No `requirements.txt`, no config | Ready for Streamlit Community Cloud or Docker |
 
 ## Run locally
 
