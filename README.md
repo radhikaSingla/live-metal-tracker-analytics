@@ -1,8 +1,21 @@
-# 🧭 MetalPulse — Live Precious Metals Terminal
+# 🧭 MetalPulse — Real-Time Precious Metals Analytics Dashboard
 
-A real-time Streamlit dashboard tracking Gold, Silver, Platinum, Palladium,
-and Copper futures, with session analytics, technical indicators, and
-price alerts.
+A real-time **Streamlit analytics dashboard** for monitoring Gold, Silver, Platinum, Palladium, and Copper futures. The application retrieves market data through `yfinance`, processes incoming price data, calculates technical indicators, and presents interactive charts, session analytics, and configurable price alerts.
+
+### 🔍 Key Capabilities
+
+- **Automated data ingestion** using `yfinance`
+- **Real-time market monitoring** for precious metals futures
+- **Time-series analysis** of price movements
+- **Technical indicators** for market trend analysis
+- **Interactive data visualizations** using Streamlit
+- **Price alerts** for monitoring market movements
+- **CSV export** for further analysis
+- **Docker support** for deployment
+
+### 🛠️ Tech Stack
+
+**Python · Streamlit · Pandas · yfinance · Plotly · Docker**
 
 
 ## Run locally
